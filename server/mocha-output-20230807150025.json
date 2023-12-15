@@ -1,0 +1,93 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-07T09:30:25.018Z",
+    "end": "2023-08-07T09:30:26.201Z",
+    "duration": 1183
+  },
+  "suites": [
+    {
+      "title": "API Tests",
+      "tests": [
+        {
+          "fullTitle": "API Tests should respond with \"hello world\" from /hello endpoint",
+          "title": "should respond with \"hello world\" from /hello endpoint",
+          "duration": 25,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should fetch tasks from /tasks endpoint",
+          "title": "should fetch tasks from /tasks endpoint",
+          "duration": 838,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should create a new task",
+          "title": "should create a new task",
+          "duration": 135,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should sign up a new user",
+          "title": "should sign up a new user",
+          "duration": 111,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should not sign up a user with an existing email",
+          "title": "should not sign up a user with an existing email",
+          "duration": 63,
+          "result": "passed",
+          "err": {}
+        }
+      ]
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "fullTitle": "API Tests should respond with \"hello world\" from /hello endpoint",
+      "title": "should respond with \"hello world\" from /hello endpoint",
+      "duration": 25,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should fetch tasks from /tasks endpoint",
+      "title": "should fetch tasks from /tasks endpoint",
+      "duration": 838,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should create a new task",
+      "title": "should create a new task",
+      "duration": 135,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should sign up a new user",
+      "title": "should sign up a new user",
+      "duration": 111,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should not sign up a user with an existing email",
+      "title": "should not sign up a user with an existing email",
+      "duration": 63,
+      "result": "passed",
+      "err": {}
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-08-07T09:27:51.430Z",
+    "end": "2023-08-07T09:27:52.453Z",
+    "duration": 1023
+  },
+  "suites": [
+    {
+      "title": "API Tests",
+      "tests": [
+        {
+          "fullTitle": "API Tests should respond with \"hello world\" from /hello endpoint",
+          "title": "should respond with \"hello world\" from /hello endpoint",
+          "duration": 35,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should fetch tasks from /tasks endpoint",
+          "title": "should fetch tasks from /tasks endpoint",
+          "duration": 695,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should create a new task",
+          "title": "should create a new task",
+          "duration": 165,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "API Tests should sign up a new user",
+          "title": "should sign up a new user",
+          "duration": 34,
+          "result": "failed",
+          "err": {
+            "message": "expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 409",
+            "showDiff": true,
+            "actual": "409",
+            "expected": "201",
+            "stack": "AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 409\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\test\\index.spec.js:58:34\n    at Generator.next (<anonymous>)\n    at fulfilled (test\\index.spec.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+          }
+        },
+        {
+          "fullTitle": "API Tests should not sign up a user with an existing email",
+          "title": "should not sign up a user with an existing email",
+          "duration": 30,
+          "result": "failed",
+          "err": {
+            "stack": "MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"existing@example.com\" }\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:50:33\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:331:21\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:207:17\n    at handleOperationResult (node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:335:20)\n    at Connection.onMessage (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:206:9)\n    at MessageStream.<anonymous> (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n    at MessageStream.emit (node:events:513:28)\n    at processIncomingData (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n    at MessageStream._write (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n    at writeOrBuffer (node:internal/streams/writable:392:12)\n    at _write (node:internal/streams/writable:333:10)\n    at Writable.write (node:internal/streams/writable:337:10)\n    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n    at TLSSocket.emit (node:events:513:28)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Readable.push (node:internal/streams/readable:234:10)\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)",
+            "message": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"existing@example.com\" }",
+            "index": 0,
+            "code": 11000,
+            "keyPattern": {
+              "email": 1
+            },
+            "keyValue": {
+              "email": "existing@example.com"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "fullTitle": "API Tests should sign up a new user",
+      "title": "should sign up a new user",
+      "duration": 34,
+      "result": "failed",
+      "err": {
+        "message": "expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 409",
+        "showDiff": true,
+        "actual": "409",
+        "expected": "201",
+        "stack": "AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 409\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\test\\index.spec.js:58:34\n    at Generator.next (<anonymous>)\n    at fulfilled (test\\index.spec.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+      }
+    },
+    {
+      "fullTitle": "API Tests should not sign up a user with an existing email",
+      "title": "should not sign up a user with an existing email",
+      "duration": 30,
+      "result": "failed",
+      "err": {
+        "stack": "MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"existing@example.com\" }\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:50:33\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:331:21\n    at C:\\Users\\nidhi.v\\Documents\\Assignments\\Task1HC\\server\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:207:17\n    at handleOperationResult (node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:335:20)\n    at Connection.onMessage (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:206:9)\n    at MessageStream.<anonymous> (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n    at MessageStream.emit (node:events:513:28)\n    at processIncomingData (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n    at MessageStream._write (node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n    at writeOrBuffer (node:internal/streams/writable:392:12)\n    at _write (node:internal/streams/writable:333:10)\n    at Writable.write (node:internal/streams/writable:337:10)\n    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n    at TLSSocket.emit (node:events:513:28)\n    at addChunk (node:internal/streams/readable:324:12)\n    at readableAddChunk (node:internal/streams/readable:297:9)\n    at Readable.push (node:internal/streams/readable:234:10)\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)",
+        "message": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"existing@example.com\" }",
+        "index": 0,
+        "code": 11000,
+        "keyPattern": {
+          "email": 1
+        },
+        "keyValue": {
+          "email": "existing@example.com"
+        }
+      }
+    }
+  ],
+  "passes": [
+    {
+      "fullTitle": "API Tests should respond with \"hello world\" from /hello endpoint",
+      "title": "should respond with \"hello world\" from /hello endpoint",
+      "duration": 35,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should fetch tasks from /tasks endpoint",
+      "title": "should fetch tasks from /tasks endpoint",
+      "duration": 695,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "API Tests should create a new task",
+      "title": "should create a new task",
+      "duration": 165,
+      "result": "passed",
+      "err": {}
+    }
+  ]
+}

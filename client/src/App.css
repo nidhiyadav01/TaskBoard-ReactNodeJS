@@ -1,0 +1,181 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.AppTask {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.AppTask form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tasks {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  color: rgb(229, 222, 222);
+}
+
+.tasks li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: rgb(12, 11, 11);
+  border: 1px solid rgb(61, 54, 54);
+  border-radius: 10px;
+}
+
+.tasks li button {
+  position: absolute;
+  font-size: 10px;
+  top: 5px;
+  right: 5px;
+} 
+.signup-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.signup-form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input {
+ 
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+.signup-button {
+  background-color: rgb(32, 32, 35);
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-heading {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.login-form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+ 
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+.login-button {
+  background-color: rgb(32, 32, 35);
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.App form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.App h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.decks {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  color: black;
+}
+
+.decks li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: rgb(174, 69, 69);
+  border: 1px solid rgb(164, 86, 86);
+  border-radius: 10px;
+}
+
+.decks li button {
+  position: absolute;
+  font-size: 10px;
+  top: 5px;
+  right: 5px;
+}  
+ */
